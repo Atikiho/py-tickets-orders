@@ -62,9 +62,9 @@ class MovieSession(models.Model):
 
     @property
     def get_tickets_available(self):
-        return (self.cinema_hall.rows *
-                self.cinema_hall.seats_in_row -
-                len(Ticket.objects.all()))
+        return (self.cinema_hall.rows
+                * self.cinema_hall.seats_in_row
+                - len(Ticket.objects.all()))
 
 
 class Order(models.Model):
