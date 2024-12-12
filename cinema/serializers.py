@@ -1,6 +1,5 @@
 from django.db import transaction
-from rest_framework import serializers, status
-from rest_framework.response import Response
+from rest_framework import serializers
 
 from cinema.models import (
     Genre,
